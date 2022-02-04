@@ -16,6 +16,8 @@
   --lg: 1024px; /* laptop screen */
   --xl: 1280px; /* desktop screen */
   --xxl: 1536px; /* max screen */
+  -webkit-tap-highlight-color: transparent;
+  --header-height: 4rem;
 }
 
 html {
@@ -129,10 +131,11 @@ input:invalid {
 /* header starts here */
 .header {
   width: 100vw;
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.9rem 2rem;
+  padding: 0rem 2rem;
   background-color: white;
   border-bottom: 1.5px solid rgba(var(--gray-light), 1);
 }
@@ -193,6 +196,107 @@ input:invalid {
 .header_toggle {
   display: none;
 }
+
+.header_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header_content {
+    position: absolute;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: white;
+    top: var(--header-height);
+    right: -100%;
+    width: max-content;
+    transition: ease 800ms;
+    width: 180px;
+    max-width: 80vw;
+  }
+
+  .header_content--active {
+    right: 0px;
+  }
+
+  .header_search {
+    width: 100%;
+  }
+  .header_searchBar {
+    min-width: 0px;
+  }
+  .header_searchBtn {
+    min-width: fit-content;
+  }
+
+  .header_links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header_link {
+    width: max-content;
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0.5rem 0rem; */
+  }
+
+  .header_links .header_link > * {
+    margin: 0rem;
+    margin-top: 0.85rem;
+  }
+
+  .header_toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 22.5px;
+    height: 18px;
+    padding: 1px 0px;
+  }
+
+  .header_burger {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(var(--black), 0.85);
+    border-radius: 10px;
+    transition: ease 500ms;
+  }
+
+  .header_toggle--active {
+    position: relative;
+    display: flex;
+  }
+
+  .header_toggle--active .header_burger:nth-child(odd) {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_toggle--active .header_burger:nth-child(1) {
+    top: 50%;
+    bottom: 50%;
+    transform: rotate(45deg);
+  }
+  .header_toggle--active .header_burger:nth-child(3) {
+    top: 50%;
+    bottom: 50%;
+    transform: rotate(135deg);
+  }
+  .header_toggle--active .header_burger:nth-child(even) {
+    display: none;
+  }
+
+  .header_mobile {
+    display: block;
+  }
+}
+
 /* header ends here */
 
 /* gloabl container */

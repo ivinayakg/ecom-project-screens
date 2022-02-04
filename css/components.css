@@ -49,3 +49,82 @@ i.badge_icon {
 }
 
 /* badge component ends here */
+
+/* slider component starts from here */
+.slider {
+  overflow: hidden;
+  max-width: 100vw;
+  display: grid;
+  grid-template-areas: "overflow";
+}
+
+.slider_slide {
+  grid-area: overflow;
+  display: flex;
+  width: max-content;
+  max-height: 95vh;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  transition: ease 500ms;
+}
+
+.slider_item {
+  width: 100%;
+}
+
+.slider_item img {
+  /* this is a temprory css it doesnt have any relation with the component itself */
+  object-fit: cover;
+  max-height: 100%;
+  width: 100vw;
+  object-position: center center;
+}
+
+.slider_buttons {
+  grid-area: overflow;
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  justify-content: space-between;
+}
+
+.slider_button1,
+.slider_button2 {
+  background-color: transparent;
+  color: white;
+  z-index: 2;
+  transition: ease 400ms;
+}
+
+.slider_button1:hover,
+.slider_button2:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.slider_dots {
+  grid-area: overflow;
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  max-width: 100vw;
+  z-index: 10;
+  margin-bottom: 1.2rem;
+}
+
+.slide_dot i {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.slider--dots .slider_dots {
+  display: flex;
+}
+
+.slider--dots .slider_buttons {
+  display: none;
+}
+
+/* slider component ends here */
