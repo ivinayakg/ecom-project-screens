@@ -1,0 +1,51 @@
+@import url(/CSS/global.css);
+
+html {
+  color: rgba(var(--black), 0.85);
+}
+
+.badge {
+  margin: 1rem;
+  width: max-content;
+}
+
+.badge_icon {
+  color: white;
+  padding: 4px 8.5px;
+  position: absolute;
+}
+i.badge_icon {
+  padding: 7px 11px;
+}
+
+.badge_icon.pri {
+  background-color: rgba(var(--primary), 1);
+}
+
+.badge_icon.sec {
+  background-color: rgba(var(--secondary), 1);
+}
+
+.badge_icon.def {
+  background-color: rgba(var(--black), 1);
+}
+
+.t-left {
+  top: -2em;
+  left: -2em;
+}
+
+.t-right {
+  top: -2em;
+  right: -2em;
+}
+
+.b-left {
+  bottom: -2em;
+  left: -2em;
+}
+
+.b-right {
+  bottom: -2em;
+  right: -2em;
+}
