@@ -350,6 +350,22 @@ button {
   align-items: start;
   justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+  .catergory_card {
+    margin: 0.5rem;
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .catergory_card {
+    text-align: justify;
+  }
+  .catergory_cardImg {
+    display: none;
+  }
+}
 /* catergory cards ends here */
 
 /* catergory list stars here */
@@ -381,6 +397,23 @@ button {
 .catergory_listItem h4 {
   background-color: white;
   padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .catergory_list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .catergory_listItem {
+    flex-basis: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catergory_listItem {
+    flex-basis: 125px;
+  }
 }
 
 /* catergory list ends here */
