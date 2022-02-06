@@ -214,6 +214,7 @@ input:invalid {
     width: max-content;
     transition: ease 800ms;
     width: 180px;
+    z-index: 100;
     max-width: 80vw;
   }
 
@@ -308,6 +309,7 @@ input:invalid {
   align-items: center;
   max-width: 1300px;
   height: max-content;
+  padding: 0.5rem;
 }
 
 .section {
