@@ -10,6 +10,10 @@
   gap: 16px;
 }
 
+.jcsb {
+  justify-content: space-between;
+}
+
 .text-center {
   text-align: center;
 }
@@ -22,6 +26,10 @@
 .vh100 {
   height: 100vh;
   max-height: 100vh;
+}
+
+.w100 {
+  width: 100%;
 }
 
 /* margin and padding starts here */
