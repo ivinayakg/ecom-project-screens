@@ -1,4 +1,5 @@
 .hero_slider {
+  z-index: 1;
   width: 95vw;
   height: 85vh;
 }
@@ -14,4 +15,18 @@
 
 .hero_slider img {
   object-position: top left;
+}
+
+@media (max-width: 768px) {
+  .hero_slider {
+    max-height: 325px;
+  }
+  .hero_slider .slider_item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  html {
+    font-size: 85%;
+  }
 }
