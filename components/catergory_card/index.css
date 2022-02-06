@@ -1,0 +1,31 @@
+.catergory_card {
+  display: grid;
+  grid-template-areas: "img cont cont";
+  padding: 3rem 2.4rem;
+  margin: 2rem;
+  background-color: rgb(var(--gray-light));
+  border-radius: 10px;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.catergory_cardImg {
+  grid-area: img;
+  height: 10rem;
+}
+
+.catergory_cardImg img {
+  object-fit: cover;
+  height: 100%;
+  width: 15rem;
+}
+
+.catergory_cardContent {
+  height: 100%;
+  grid-area: cont;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
