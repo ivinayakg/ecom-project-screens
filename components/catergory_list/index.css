@@ -1,0 +1,28 @@
+.catergory_list {
+  display: flex;
+  gap: 12px;
+}
+
+.catergory_listItem {
+  display: grid;
+  grid-template-areas: "overflow";
+  align-items: center;
+  text-align: center;
+}
+
+.catergory_listItem > * {
+  grid-area: overflow;
+  width: 100%;
+}
+
+.catergory_listItem img {
+  object-fit: cover;
+  width: 16rem;
+  height: 10rem;
+  object-position: center center;
+}
+
+.catergory_listItem h4 {
+  background-color: white;
+  padding: 5px;
+}
