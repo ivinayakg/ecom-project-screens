@@ -86,15 +86,25 @@ export const sliderHandler = () => {
     } else if (!slideDotsEvent) {
       slideButtons.children[1].addEventListener("click", () => {
         current =
-          current !== sliderItems.length - 1
-            ? current + 1
-            : sliderItems.length - 1;
+          current !== sliderItems.length - 1 ? current + 1 : sliderItems.length;
+        if (current === sliderItems.length) {
+          current = 0;
+        }
         slide.style.transform = `translate3d(-${translatePercentage[current]}px,0,0)`;
       });
       slideButtons.children[0].addEventListener("click", () => {
         current = current !== 0 ? current - 1 : 0;
         slide.style.transform = `translate3d(-${translatePercentage[current]}px,0,0)`;
       });
+    }
+
+    if (
+      target.attributes["autoSlide"] &&
+      target.attributes["autoSlide"].nodeValue !== ""
+    ) {
+      setInterval(() => {
+        slideButtons.children[1].click();
+      }, parseInt(target.attributes["autoSlide"].nodeValue));
     }
   });
 };

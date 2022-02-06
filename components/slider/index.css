@@ -1,56 +1,5 @@
-/* badge component starts here */
+@import url(/CSS/global.css);
 
-.badge {
-  margin: 1rem;
-  width: max-content;
-}
-
-.badge_icon {
-  color: white;
-  padding: 1px 6px;
-  border-radius: 60%;
-  position: absolute;
-  font-size: 12px;
-}
-i.badge_icon {
-  padding: 7px 11px;
-}
-
-.badge_icon.pri {
-  background-color: rgba(var(--primary), 1);
-}
-
-.badge_icon.sec {
-  background-color: rgba(var(--secondary), 1);
-}
-
-.badge_icon.def {
-  background-color: rgba(var(--black), 1);
-}
-
-.t-left {
-  top: -1.1em;
-  left: -1.1em;
-}
-
-.t-right {
-  top: -1.1em;
-  right: -1.1em;
-}
-
-.b-left {
-  bottom: -1.1em;
-  left: -1.1em;
-}
-
-.b-right {
-  bottom: -1.1em;
-  right: -1.1em;
-}
-
-/* badge component ends here */
-
-/* slider component starts from here */
 .slider {
   overflow: hidden;
   max-width: 100vw;
@@ -85,6 +34,7 @@ i.badge_icon {
   grid-area: overflow;
   display: flex;
   width: 100%;
+  max-width: 100vw;
   justify-content: space-between;
 }
 
@@ -125,5 +75,3 @@ i.badge_icon {
 .slider--dots .slider_buttons {
   display: none;
 }
-
-/* slider component ends here */
