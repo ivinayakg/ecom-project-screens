@@ -1,0 +1,17 @@
+.hero_slider {
+  width: 95vw;
+  height: 85vh;
+}
+
+.hero_slider .slider_slide {
+  max-width: max-content;
+  overflow: hidden;
+}
+
+.hero_slider .slider_buttons {
+  width: 95vw;
+}
+
+.hero_slider img {
+  object-position: top left;
+}
