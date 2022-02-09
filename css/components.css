@@ -460,7 +460,7 @@ button {
   align-self: start;
   color: crimson;
   background-color: rgb(var(--primary));
-  padding: 5.5px;
+  padding: 2px 5.5px;
   border-radius: 50%;
 }
 

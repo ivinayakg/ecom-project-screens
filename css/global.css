@@ -266,6 +266,10 @@ input:invalid {
     padding: 1px 0px;
   }
 
+  .header_toggle:hover {
+    background-color: transparent;
+  }
+
   .header_burger {
     height: 2px;
     width: 100%;
