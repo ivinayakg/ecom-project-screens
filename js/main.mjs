@@ -1,5 +1,11 @@
-import { badgeHandler, sliderHandler, header } from "./component.mjs";
+import {
+  badgeHandler,
+  sliderHandler,
+  header,
+  radioInputHandler,
+} from "./component.mjs";
 
 badgeHandler();
 sliderHandler();
 header();
+radioInputHandler();

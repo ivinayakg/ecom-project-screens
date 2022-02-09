@@ -1,0 +1,121 @@
+@import url(/css/global.css);
+
+.productListing {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.productListing--portrait {
+  display: grid;
+  grid-template-areas: "img content" "img content";
+}
+
+.productListing_header {
+  display: grid;
+  margin: 1.2rem;
+  grid-template-areas: "overflow";
+}
+
+.productListing--portrait .productListing_header {
+  grid-area: img;
+  margin: 2rem 1.4rem;
+}
+
+.productListing_header > * {
+  grid-area: overflow;
+}
+
+.productListing_header img {
+  width: 9rem;
+  object-fit: contain;
+  justify-self: center;
+}
+
+.productListing--portrait .productListing_header img {
+  width: 10.5rem;
+}
+
+.productListing_wishlistIcon {
+  justify-self: end;
+  align-self: start;
+  color: crimson;
+  background-color: rgb(var(--primary));
+  padding: 5.5px;
+  border-radius: 50%;
+}
+
+.productListing_content {
+  background-color: white;
+  text-align: center;
+  padding: 0.6rem 4.4rem;
+}
+
+.productListing--portrait .productListing_content {
+  grid-area: content;
+  text-align: left;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.productListing--portrait .productListing_content > * {
+  margin: 0px;
+}
+
+.productListing_title {
+  margin: 3px auto;
+}
+
+.productListing_price {
+  font-weight: 900;
+  color: black;
+  font-size: 1.2rem;
+  margin: 3px auto;
+}
+
+.productListing--portrait .productListing_price {
+  display: flex;
+  gap: 10px;
+}
+
+.productListing_discount {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.45);
+  text-decoration-color: rgba(0, 0, 0, 0.45);
+  display: none;
+}
+.productListing--portrait .productListing_discount {
+  display: block;
+}
+
+.productListing_action {
+  width: 100%;
+  padding: 0.6rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.productListing_action--active:hover {
+  background-color: rgba(var(--secondary), 0.85);
+}
+
+.productListing_action--active {
+  background-color: rgb(var(--secondary));
+}
+
+.productListing_btnContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.productListing_btnContainer > * {
+  padding: 0.5rem 3.7rem;
+  font-size: 1rem;
+}
+
+@import url(/css/utility.css);

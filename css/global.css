@@ -55,6 +55,10 @@ button {
   background-color: rgba(var(--gray-light), 1);
 }
 
+button:hover {
+  background-color: rgba(var(--black), 0.45);
+}
+
 .btn-pri {
   background-color: rgba(var(--primary), 1);
 }
