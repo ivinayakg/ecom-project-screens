@@ -1,0 +1,18 @@
+.hero .container {
+  width: 100%;
+}
+
+.hero_heading {
+  text-align: center;
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  background-color: white;
+  color: black;
+}
+
+.wishlistContainer {
+  width: 100%;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+}
