@@ -1,0 +1,21 @@
+.hero .container {
+  height: max-content;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.productFilter {
+  align-self: flex-start;
+  min-height: 100vh;
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.productsContainer.productsContainer--portrait {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}

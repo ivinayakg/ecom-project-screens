@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecom Store</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="../../js/main.mjs" type="module" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_brand">
+        <h1 class="t3">Ecom Store</h1>
+      </div>
+
+      <button class="header_toggle">
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+      </button>
+
+      <div class="header_content">
+        <div class="header_search br-full">
+          <input type="text" placeholder="Search" class="header_searchBar" />
+          <button class="header_searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="header_links">
+          <div class="header_link flex">
+            <div
+              class="badge t3 m0"
+              icon="false"
+              content="2"
+              position="t-right"
+              color="sec"
+            >
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="header_mobile .text4">Wishlist</div>
+          </div>
+          <div class="header_link flex">
+            <div
+              class="badge t3 m0 ml3"
+              icon="false"
+              content="5"
+              position="t-right"
+              color="sec"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <p class="text4 ml1">Cart</p>
+          </div>
+          <div class="header_link ml2"><button>Login</button></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section hero">
+      <div class="container">
+        <div class="productFilter">
+          <div class="productFilter_heading">
+            <h4>Filter</h4>
+            <button class="productFilter_clear">Clear</button>
+          </div>
+          <div class="productFilter_filter">
+            <h4 class="productFilter_filterHeading">Price</h4>
+            <div class="productFilter_priceRange">
+              <p>5000</p>
+              <p>10000</p>
+              <p>15000</p>
+            </div>
+
+            <input type="range" id="priceRange" />
+          </div>
+          <div class="productFilter_filter">
+            <h4 class="productFilter_filterHeading">Catergory</h4>
+            <div class="productListing_radio" content="Men/Women"></div>
+          </div>
+          <div class="productFilter_filter">
+            <h4 class="productFilter_filterHeading">Rating</h4>
+            <div
+              class="productListing_radio"
+              content="4 Stars or above/3 Stars or above/2 Stars or above/1 Stars or above"
+            ></div>
+          </div>
+          <div class="productFilter_filter">
+            <h4 class="productFilter_filterHeading">Sort By</h4>
+            <div
+              class="productListing_radio"
+              content="Price - High To Low/Price -Low To High"
+            ></div>
+          </div>
+        </div>
+
+        <div class="productsContainer productsContainer--portrait">
+          <div
+            class="productListing"
+            status="favourite"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="default"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="favourite"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="default"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="default"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="favourite"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="both"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="default"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="favourite"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="both"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+          <div
+            class="productListing"
+            status="both"
+            type="portrait"
+            discount="1000"
+            price="3999"
+          >
+            <div class="productListing_header">
+              <img src="../assets/productImage.png" alt="Product Image" />
+              <div class="productListing_wishlistIcon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="productListing_content">
+              <h5 class="productListing_title">Product 1</h5>
+              <div class="productListing_price"></div>
+            </div>
+            <button class="productListing_action">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
