@@ -1,0 +1,26 @@
+.container {
+  width: 100vw;
+  height: 80vh;
+}
+
+.login_comp,
+.signup_comp,
+.login_form,
+.signup_form {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1.2rem;
+  background-color: white;
+}
+
+.login_form,
+.signup_form {
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.login_form button,
+.signup_form button {
+  width: 100%;
+}
