@@ -132,9 +132,11 @@ export const radioInputHandler = () => {
         } else if (e.target.attributes["value"].nodeValue === "off") {
           e.target.attributes["value"].nodeValue = "on";
           icon.classList.add("fa-check");
-          console.log(e, icon);
         }
       });
+
+      icon.addEventListener("click", () => input.click());
+
       target.append(input);
     });
   });
@@ -210,5 +212,48 @@ export const productCardHadnler = () => {
     } else {
       priceContainer.innerHTML = `<p>&#8377 ${salePrice}</p>`;
     }
+  });
+};
+
+export const productQuantity = () => {
+  const productQuantitiesComp = document.querySelectorAll(".product_Qauntity");
+
+  productQuantitiesComp.forEach((target, i) => {
+    let btns = target.querySelectorAll("i");
+    let quanityContainer = target.querySelector(".product_qauntityValue");
+    let currentQuantity =
+      parseInt(target.attributes["quantity"]?.nodeValue) || 0;
+    quanityContainer.innerText = currentQuantity;
+
+    btns[0].addEventListener("click", () => {
+      ++currentQuantity;
+      quanityContainer.innerText = currentQuantity;
+    });
+    btns[1].addEventListener("click", () => {
+      --currentQuantity;
+      if (currentQuantity < 0) currentQuantity = 0;
+      quanityContainer.innerText = currentQuantity;
+    });
+  });
+};
+
+export const inputHandler = () => {
+  const inputsContainer = document.querySelectorAll(".input");
+
+  inputsContainer.forEach((target, i) => {
+    let input = target.querySelector("input");
+    input.addEventListener("change", () => {
+      input.className = "";
+      if (!input.validity.typeMismatch) {
+        input.classList.add("input--valid");
+      } else {
+        input.classList.add("input--invalid");
+      }
+
+      if (input.value === "") {
+        input.classList.remove("input--valid");
+        input.classList.remove("input--invalid");
+      }
+    });
   });
 };
