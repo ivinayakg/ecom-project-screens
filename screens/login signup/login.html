@@ -64,10 +64,18 @@
           <h2 class="head2">Login</h2>
           <form class="login_form flex flex-col">
             <label for="username">Uername</label>
-            <input type="text" id="username" required />
+            <div class="input">
+              <input type="text" id="username" required />
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
             <label for="password">Password</label>
-            <input type="text" id="password" required />
+            <div class="input">
+              <input type="password" id="password" required />
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="productListing_radio" content="Remember Me"></div>
             <button class="btn-sec" type="submit">Login</button>
+            <a href="#">Create An Account ></a>
           </form>
         </div>
       </div>
