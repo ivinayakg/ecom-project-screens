@@ -1,0 +1,36 @@
+.hero .container {
+  width: 100%;
+  /* padding: 1.2rem 3rem; */
+}
+
+.hero_heading {
+  text-align: center;
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  background-color: white;
+  color: black;
+}
+
+.cartContainer {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.2rem;
+  justify-content: center;
+}
+
+.cartProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* .cartProducts > * {
+  width: 100%;
+} */
+
+.cart_total {
+  align-self: start;
+}

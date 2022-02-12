@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecom Store</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="../../js/main.mjs" type="module" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_brand">
+        <h1 class="t3">Ecom Store</h1>
+      </div>
+
+      <button class="header_toggle">
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+      </button>
+
+      <div class="header_content">
+        <div class="header_search br-full">
+          <input type="text" placeholder="Search" class="header_searchBar" />
+          <button class="header_searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="header_links">
+          <div class="header_link flex">
+            <div
+              class="badge t3 m0"
+              icon="false"
+              content="2"
+              position="t-right"
+              color="sec"
+            >
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="header_mobile .text4">Wishlist</div>
+          </div>
+          <div class="header_link flex">
+            <div
+              class="badge t3 m0 ml3"
+              icon="false"
+              content="5"
+              position="t-right"
+              color="sec"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <p class="text4 ml1">Cart</p>
+          </div>
+          <div class="header_link ml2"><button>Login</button></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section hero">
+      <div class="container flex-col">
+        <div class="hero_heading">
+          <h2 class="head2">Cart</h2>
+        </div>
+        <div class="cartContainer">
+          <div class="cartProducts">
+            <div class="cartProduct cartProduct--portrait">
+              <div class="cartProduct_img">
+                <img src="/screens/cart/productImage.png" alt="" />
+              </div>
+              <div class="cartProduct_content">
+                <div class="cartProduct_heading">
+                  <h5 class="cartProductProduct_title">Product 1</h5>
+                  <div class="cartProduct_price">
+                      <h2 class="t3">&#8377 2999</h2>
+                      <h3 class="t3 text-cross text-fade">&#8377 3999</h3>
+                  </div>
+                  <p class="cartProduct_discount t3 text-fade">26%</p>
+                  <div class="product_Qauntity">
+                      <div class="text4">Quantity :-</div>
+                      <i class="fas fa-plus-square"></i>
+                      <div class="product_qauntityValue"></div>
+                      <i class="fas fa-minus-square"></i>
+                  </div>
+                </div>
+                <div class="cartProduct_actions">
+                    <button>Remove From Cart</button>
+                    <button class="cartProduct_action--active">Move To Wishlist</button>
+                </div>
+              </div>
+            </div><div class="cartProduct cartProduct--portrait">
+              <div class="cartProduct_img">
+                <img src="/screens/cart/productImage.png" alt="" />
+              </div>
+              <div class="cartProduct_content">
+                <div class="cartProduct_heading">
+                  <h5 class="cartProductProduct_title">Product 1</h5>
+                  <div class="cartProduct_price">
+                      <h2 class="t3">&#8377 2999</h2>
+                      <h3 class="t3 text-cross text-fade">&#8377 3999</h3>
+                  </div>
+                  <p class="cartProduct_discount t3 text-fade">26%</p>
+                  <div class="product_Qauntity">
+                      <div class="text4">Quantity :-</div>
+                      <i class="fas fa-plus-square"></i>
+                      <div class="product_qauntityValue"></div>
+                      <i class="fas fa-minus-square"></i>
+                  </div>
+                </div>
+                <div class="cartProduct_actions">
+                    <button>Remove From Cart</button>
+                    <button class="cartProduct_action--active">Move To Wishlist</button>
+                </div>
+              </div>
+            </div><div class="cartProduct cartProduct--portrait">
+              <div class="cartProduct_img">
+                <img src="/screens/cart/productImage.png" alt="" />
+              </div>
+              <div class="cartProduct_content">
+                <div class="cartProduct_heading">
+                  <h5 class="cartProductProduct_title">Product 1</h5>
+                  <div class="cartProduct_price">
+                      <h2 class="t3">&#8377 2999</h2>
+                      <h3 class="t3 text-cross text-fade">&#8377 3999</h3>
+                  </div>
+                  <p class="cartProduct_discount t3 text-fade">26%</p>
+                  <div class="product_Qauntity">
+                      <div class="text4">Quantity :-</div>
+                      <i class="fas fa-plus-square"></i>
+                      <div class="product_qauntityValue"></div>
+                      <i class="fas fa-minus-square"></i>
+                  </div>
+                </div>
+                <div class="cartProduct_actions">
+                    <button>Remove From Cart</button>
+                    <button class="cartProduct_action--active">Move To Wishlist</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_total">
+            <div class="cart_totalHeading">
+              <h3 class="head3">Price Summary -</h3>
+            </div>
+            <div class="cart_totalDetails">
+                <div class="cart_priceDetail">
+                    <p class="text4">Price (2 Times)</p>
+                    <p class="text4">&#8377 4990</p>
+                </div>
+                <div class="cart_priceDetail">
+                    <p class="text4">Dicount</p>
+                    <p class="text4">&#8377 2000</p>
+                </div>
+                <div class="cart_priceDetail">
+                    <p class="text4">Delivery Charges</p>
+                    <p class="text4">&#8377 500</p>
+                </div>
+            </div>
+            <div class="cart_totalAmount">
+                <h3 class="head3">Total Amount</h3>
+                <h4 class="head4">&#8377 3490</h4>
+            </div>
+            <div class="cart_totalAction">
+                <p>You have made a total saving of &#8377 1500</p>
+                <button class="btn-sec">Place Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
