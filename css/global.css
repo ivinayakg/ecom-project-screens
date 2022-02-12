@@ -44,6 +44,43 @@ a {
 }
 
 /* button starts here */
+
+/* input here */
+.input {
+  position: relative;
+  width: max-content;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  border: 1.5px solid rgba(var(--gray-light), 1);
+  padding: 5px 8px;
+}
+
+.input i {
+  position: absolute;
+  display: none;
+  color: rgba(var(--red), 1);
+  font-size: inherit;
+  top: 5px;
+  right: 8px;
+}
+
+.input--valid {
+  border-color: rgb(6, 245, 6);
+  background-color: rgba(6, 245, 6, 0.2);
+}
+
+.input--invalid {
+  border-color: rgba(var(--red), 0.75);
+}
+.input .input--invalid ~ i {
+  display: block;
+}
+
 /* button css styles are changed in the button component css file --------------------------------------------------- */
 button {
   cursor: pointer;
@@ -100,39 +137,6 @@ img {
 }
 
 /* basic borders needed */
-
-/* forms input fields  */
-
-/* update the below input from components input folder ----------------------------------------------------------*/
-.input {
-  position: relative;
-  width: max-content;
-}
-
-input:focus {
-  outline: none;
-}
-
-input {
-  border: 1.5px solid rgba(var(--gray-light), 1);
-  padding: 5px 8px;
-}
-
-.input i {
-  position: absolute;
-  display: none;
-  color: rgba(var(--red), 1);
-  font-size: inherit;
-  top: 5px;
-  right: 8px;
-}
-
-input:invalid {
-  border-color: rgba(var(--red), 0.75);
-}
-.input input:invalid ~ i {
-  display: block;
-}
 
 /* header starts here */
 .header {
