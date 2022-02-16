@@ -190,24 +190,32 @@ export const productCardHadnler = () => {
 
     if (type === "portrait") {
       target.classList.add("productListing--portrait");
+      // removed the previous one button only
       actionButton.remove();
       let discountPercentage = Math.ceil(
         ((price - parseInt(salePrice)) / price) * 100
       );
+
+      // dynamically creating buttons for the card
       let btn1 = document.createElement("button");
       btn1.classList.add("productListing_action");
       btn1.innerText = "Add To Cart";
       let btn2 = document.createElement("button");
       btn2.classList.add("productListing_action--active");
       btn2.innerText = "Add To Wishlist";
+
+      // creeating the discount percent component for the card
       let discountPara = document.createElement("p");
       discountPara.innerText = `%${discountPercentage} Off`;
+
+      // adding all the nodes to the document
       contentContainer.append(discountPara);
       let btnContainer = document.createElement("div");
       btnContainer.classList.add("productListing_btnContainer");
       btnContainer.append(btn1);
       btnContainer.append(btn2);
       contentContainer.append(btnContainer);
+
       priceContainer.innerHTML = `<p>&#8377 ${salePrice}</p><p class='productListing_discount'>&#8377 ${price}</p>`;
     } else {
       priceContainer.innerHTML = `<p>&#8377 ${salePrice}</p>`;
