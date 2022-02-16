@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script async src="/js/main.mjs" type="module"></script>
+    <title>Ecom Screens</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_brand">
+        <h1 class="t3">Ecom Store</h1>
+      </div>
+
+      <button class="header_toggle">
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+      </button>
+
+      <div class="header_content">
+        <div class="header_search br-full">
+          <input type="text" placeholder="Search" class="header_searchBar" />
+          <button class="header_searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="header_links">
+          <div class="header_link flex">
+            <div
+              class="badge t3 m0"
+              icon="false"
+              content="2"
+              position="t-right"
+              color="sec"
+            >
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="header_mobile .text4">Wishlist</div>
+          </div>
+          <div class="header_link flex">
+            <div
+              class="badge t3 m0 ml3"
+              icon="false"
+              content="5"
+              position="t-right"
+              color="sec"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <p class="text4 ml1">Cart</p>
+          </div>
+          <div class="header_link ml2"><button>Login</button></div>
+        </div>
+      </div>
+    </header>
+    <div class="section">
+      <div class="container">
+        <div class="productPage">
+          <div class="productPage_img">
+            <img src="./productImage.png" alt="" />
+          </div>
+          <div class="productPage_content">
+            <div class="productPage_detail">
+              <h2 class="head2">Product Name</h2>
+              <h4 class="head4 text-fade">Product Catergory</h4>
+              <div class="productPage_price">
+                <!-- <h2 class="head2"><span>&#8377</span> 2999</h2>
+                        <h2 class="head2 productPage_discount"><span>&#8377</span> 3999</h2> -->
+              </div>
+              <p class="text4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
+                vitae obcaecati animi dignissimos non nam necessitatibus ducimus
+                ad, fugit ipsa id qui minima quis rem exercitationem suscipit
+                porro est accusantium.
+              </p>
+            </div>
+            <div class="productPage_Actions mt3">
+              <h4 class="head4">Choose the product quantity :-</h4>
+              <div class="product_Qauntity mb3">
+                <div class="text4">Quantity :-</div>
+                <i class="fas fa-plus-square"></i>
+                <div class="product_qauntityValue"></div>
+                <i class="fas fa-minus-square"></i>
+              </div>
+              <div class="productPage_Actionsbtns">
+                <button class="productPage_action1">Add To Wishlist</button>
+                <button class="productPage_action2">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
