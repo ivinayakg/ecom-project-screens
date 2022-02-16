@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecom</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/screens/login/index.css" />
+    <script async src="/js/main.mjs" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_brand">
+        <h1 class="t3">Ecom Store</h1>
+      </div>
+
+      <button class="header_toggle">
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+      </button>
+
+      <div class="header_content">
+        <div class="header_search br-full">
+          <input type="text" placeholder="Search" class="header_searchBar" />
+          <button class="header_searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="header_links">
+          <div class="header_link flex">
+            <div
+              class="badge t3 m0"
+              icon="false"
+              content="2"
+              position="t-right"
+              color="sec"
+            >
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="header_mobile .text4">Wishlist</div>
+          </div>
+          <div class="header_link flex">
+            <div
+              class="badge t3 m0 ml3"
+              icon="false"
+              content="5"
+              position="t-right"
+              color="sec"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <p class="text4 ml1">Cart</p>
+          </div>
+          <div class="header_link ml2"><button>Login</button></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="container">
+        <div class="login_comp flex flex-col p2">
+          <h2 class="head2">Login</h2>
+          <form class="login_form flex flex-col">
+            <label for="username">Uername</label>
+            <div class="input">
+              <input type="text" id="username" required />
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <label for="password">Password</label>
+            <div class="input">
+              <input type="password" id="password" required />
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="productListing_radio" content="Remember Me"></div>
+            <button class="btn-sec" type="submit">Login</button>
+            <a href="#">Create An Account ></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
