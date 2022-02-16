@@ -132,11 +132,9 @@ export const radioInputHandler = () => {
         } else if (e.target.attributes["value"].nodeValue === "off") {
           e.target.attributes["value"].nodeValue = "on";
           icon.classList.add("fa-check");
+          console.log(e, icon);
         }
       });
-
-      icon.addEventListener("click", () => input.click());
-
       target.append(input);
     });
   });
@@ -190,32 +188,24 @@ export const productCardHadnler = () => {
 
     if (type === "portrait") {
       target.classList.add("productListing--portrait");
-      // removed the previous one button only
       actionButton.remove();
       let discountPercentage = Math.ceil(
         ((price - parseInt(salePrice)) / price) * 100
       );
-
-      // dynamically creating buttons for the card
       let btn1 = document.createElement("button");
       btn1.classList.add("productListing_action");
       btn1.innerText = "Add To Cart";
       let btn2 = document.createElement("button");
       btn2.classList.add("productListing_action--active");
       btn2.innerText = "Add To Wishlist";
-
-      // creeating the discount percent component for the card
       let discountPara = document.createElement("p");
       discountPara.innerText = `%${discountPercentage} Off`;
-
-      // adding all the nodes to the document
       contentContainer.append(discountPara);
       let btnContainer = document.createElement("div");
       btnContainer.classList.add("productListing_btnContainer");
       btnContainer.append(btn1);
       btnContainer.append(btn2);
       contentContainer.append(btnContainer);
-
       priceContainer.innerHTML = `<p>&#8377 ${salePrice}</p><p class='productListing_discount'>&#8377 ${price}</p>`;
     } else {
       priceContainer.innerHTML = `<p>&#8377 ${salePrice}</p>`;
@@ -223,7 +213,7 @@ export const productCardHadnler = () => {
   });
 };
 
-export const productQuantity = () => {
+export const productQuantityComponent = () => {
   const productQuantitiesComp = document.querySelectorAll(".product_Qauntity");
 
   productQuantitiesComp.forEach((target, i) => {
@@ -241,27 +231,6 @@ export const productQuantity = () => {
       --currentQuantity;
       if (currentQuantity < 0) currentQuantity = 0;
       quanityContainer.innerText = currentQuantity;
-    });
-  });
-};
-
-export const inputHandler = () => {
-  const inputsContainer = document.querySelectorAll(".input");
-
-  inputsContainer.forEach((target, i) => {
-    let input = target.querySelector("input");
-    input.addEventListener("change", () => {
-      input.className = "";
-      if (!input.validity.typeMismatch) {
-        input.classList.add("input--valid");
-      } else {
-        input.classList.add("input--invalid");
-      }
-
-      if (input.value === "") {
-        input.classList.remove("input--valid");
-        input.classList.remove("input--invalid");
-      }
     });
   });
 };
