@@ -18,6 +18,14 @@
   text-align: center;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-fade {
+  color: rgba(0, 0, 0, 0.45);
+}
+
 .vw100 {
   width: 100vw;
   max-width: 100vw;
