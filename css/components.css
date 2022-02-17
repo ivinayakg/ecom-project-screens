@@ -786,6 +786,18 @@ button {
   justify-content: center;
 }
 
+.productPage_price {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.productPage_discount {
+  font-size: 1.8rem;
+  text-decoration: line-through;
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.35);
+}
+
 .product_Qauntity {
   display: flex;
   gap: 10px;
