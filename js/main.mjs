@@ -4,7 +4,7 @@ import {
   header,
   radioInputHandler,
   productCardHadnler,
-  productQuantity,
+  productQuantityComponent,
 } from "./component.mjs";
 
 badgeHandler();
@@ -12,4 +12,4 @@ sliderHandler();
 header();
 radioInputHandler();
 productCardHadnler();
-productQuantity();
+productQuantityComponent();
