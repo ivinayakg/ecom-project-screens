@@ -1,3 +1,7 @@
 @import url(./global.css);
 @import url(./components.css);
 @import url(./utility.css);
+
+a {
+  color: inherit;
+}
