@@ -122,6 +122,8 @@ export const radioInputHandler = () => {
       let icon = document.createElement("i");
       icon.classList.add("productListing_radioIcon");
       icon.classList.add("fas");
+      icon.onclick = () => input.click();
+
       input.innerText = radio;
       input.append(icon);
 
@@ -135,6 +137,7 @@ export const radioInputHandler = () => {
           console.log(e, icon);
         }
       });
+
       target.append(input);
     });
   });
