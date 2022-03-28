@@ -15,45 +15,55 @@
         <h1 class="t3">Ecom Store</h1>
       </div>
 
-      <button class="header_toggle">
-        <span class="header_burger"></span>
-        <span class="header_burger"></span>
-        <span class="header_burger"></span>
-      </button>
+      <div class="header_toggle">
+        <div class="header_burger"></div>
+        <div class="header_burger"></div>
+        <div class="header_burger"></div>
+      </div>
 
       <div class="header_content">
         <div class="header_search br-full">
-          <input type="text" placeholder="Search" class="header_searchBar" />
+          <input type="text" placeholder="search" class="header_searchBar" />
+
           <button class="header_searchBtn">
             <i class="fas fa-search"></i>
           </button>
         </div>
+
         <div class="header_links">
           <div class="header_link flex">
             <div
-              class="badge t3 m0"
+              class="badge m0 t3"
               icon="false"
               content="2"
-              position="t-right"
               color="sec"
+              position="t-right"
             >
-              <i class="far fa-heart"></i>
+              <a href="/screens/wishlist/index.html"
+                ><i class="far fa-heart"></i
+              ></a>
             </div>
-            <div class="header_mobile .text4">Wishlist</div>
+            <a class="header_mobile .text4" href="/screens/wishlist/index.html"
+              >Wishlist</a
+            >
           </div>
           <div class="header_link flex">
             <div
-              class="badge t3 m0 ml3"
+              class="badge ml3 m0 t3"
               icon="false"
               content="5"
-              position="t-right"
               color="sec"
+              position="t-right"
             >
               <i class="fas fa-shopping-cart"></i>
             </div>
-            <p class="text4 ml1">Cart</p>
+            <a class="text4 ml1" href="/screens/cart/index.html">Cart</a>
           </div>
-          <div class="header_link ml2"><button>Login</button></div>
+          <div class="header_link ml2">
+            <button>
+              <a href="/screens/login/login.html">Login</a>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -75,7 +85,7 @@
             </div>
             <div class="productListing_radio" content="Remember Me"></div>
             <button class="btn-sec" type="submit">Login</button>
-            <a href="#">Create An Account ></a>
+            <a href="/screens/login/sign.html">Create An Account ></a>
           </form>
         </div>
       </div>

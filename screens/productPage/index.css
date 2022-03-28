@@ -19,3 +19,8 @@
 .productsContainer.productsContainer--portrait {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
+
+.productListing_header a {
+  display: flex;
+  justify-content: center;
+}

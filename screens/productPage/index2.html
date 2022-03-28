@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecom Store</title>
-    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="./index.css" />
-    <script src="../../js/main.mjs" type="module" async></script>
+    <script src="/js/main.mjs" type="module" async></script>
   </head>
   <body>
     <header class="header">
@@ -15,45 +15,55 @@
         <h1 class="t3">Ecom Store</h1>
       </div>
 
-      <button class="header_toggle">
-        <span class="header_burger"></span>
-        <span class="header_burger"></span>
-        <span class="header_burger"></span>
-      </button>
+      <div class="header_toggle">
+        <div class="header_burger"></div>
+        <div class="header_burger"></div>
+        <div class="header_burger"></div>
+      </div>
 
       <div class="header_content">
         <div class="header_search br-full">
-          <input type="text" placeholder="Search" class="header_searchBar" />
+          <input type="text" placeholder="search" class="header_searchBar" />
+
           <button class="header_searchBtn">
             <i class="fas fa-search"></i>
           </button>
         </div>
+
         <div class="header_links">
           <div class="header_link flex">
             <div
-              class="badge t3 m0"
+              class="badge m0 t3"
               icon="false"
               content="2"
-              position="t-right"
               color="sec"
+              position="t-right"
             >
-              <i class="far fa-heart"></i>
+              <a href="/screens/wishlist/index.html"
+                ><i class="far fa-heart"></i
+              ></a>
             </div>
-            <div class="header_mobile .text4">Wishlist</div>
+            <a class="header_mobile .text4" href="/screens/wishlist/index.html"
+              >Wishlist</a
+            >
           </div>
           <div class="header_link flex">
             <div
-              class="badge t3 m0 ml3"
+              class="badge ml3 m0 t3"
               icon="false"
               content="5"
-              position="t-right"
               color="sec"
+              position="t-right"
             >
               <i class="fas fa-shopping-cart"></i>
             </div>
-            <p class="text4 ml1">Cart</p>
+            <a class="text4 ml1" href="/screens/cart/index.html">Cart</a>
           </div>
-          <div class="header_link ml2"><button>Login</button></div>
+          <div class="header_link ml2">
+            <button>
+              <a href="/screens/login/login.html">Login</a>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -113,7 +123,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -132,7 +144,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -151,7 +165,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -170,7 +186,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -189,7 +207,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -208,7 +228,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -227,7 +249,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -246,7 +270,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -265,7 +291,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -284,7 +312,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
           <div
             class="productListing"
@@ -303,7 +333,9 @@
               <h5 class="productListing_title">Product 1</h5>
               <div class="productListing_price"></div>
             </div>
-            <button class="productListing_action">Add To Cart</button>
+            <button class="productListing_action">
+              <a href="/screens/cart/index.html">Add To Cart</a>
+            </button>
           </div>
         </div>
       </div>
